@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <title>Instant Credit - Purchase</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,900&display=swap');
+
+  * {
+    margin: 0 auto;
+  }
+  h2 {
+    padding-left: 17px;
+  }
+  .container {
+    width: 95%;
+    height: 165px;
+    background: #F1F1F1;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  b {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  button {
+    width: 87%;
+    font-size: 16px;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 9px;
+    background: #E9E9EB;
+    margin-top: 35px;
+  }
+</style>
+<body>
+  <br>
+<h2>Bank Transfer</h2>
+<hr>
+<center>
+    <div class="container" style="width: 95%;
+    height: 260px;
+    background: #F1F1F1;
+    border-radius: 10px;
+    margin-top: 20px;">
+  <p style="padding-top: 15px;">Make a quick bank transfer of ₦5,000.00 To the account details below, to purchase your own login 
+  <br>
+  <span style="color: red;">After payments is been made and confirmed by the app your instant credit log will be sent to your email, if we couldnt reach you email we will send to your Mobile Number, Pay the exact amount required by the app</span></p>
+  <br>
+</div>
+<div class="container">
+  <br>
+  <b style="float: left;">Acc Name: </b>
+  <b style="float: right; font-size: 14px;">Abraham Godspower </b>
+  <br><br>
+    <b style="float: left;">Acc Number: </b>
+    <b style="float: right;">9019943636 </b>
+<br><br>
+  <b style="float: left;">Bank Name: </b>
+  <b style="float: right;">PalmPay </b>
+
+</div>
+
+<button onclick="myAlert()">Confirm</button>
+</body>
+
+</html>
+<script>
+function myAlert() {
+  Swal.fire({
+    icon: "error",
+    title: "Error...",
+    text: "You haven't paid yet, your payments wansn't confirmed, Kindlypay now to get your log details sent to your E-mail or Mobile number",
+  });
+}
+</script>
